@@ -1,0 +1,12 @@
+.article-preview > hr {
+    width: 80%;
+}
+
+.resume-text {
+    text-align: justify;
+    padding: 10px;
+}
+
+.feedback-icons {
+    text-align: right;
+}
