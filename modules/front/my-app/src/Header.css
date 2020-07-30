@@ -1,0 +1,18 @@
+.navbar {
+    min-height: 80px;
+}
+
+.icons-header {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 2px;
+}
+
+.header-brand {
+    margin-left: 100px;
+}
+
+.shadow-header {
+    min-height: 2px;
+    box-shadow: 5px 10px 8px #888888;
+}

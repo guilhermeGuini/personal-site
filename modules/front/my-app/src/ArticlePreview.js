@@ -17,10 +17,10 @@ class ArticlePreview extends React.Component {
     return (
       <div className="article-preview">
         <div className="row">
-          <div className="col-2">
+          <div className="col-sm-8 col-md-2 text-center">
             <Thumbnail srcImg={this.srcImg} />
           </div>
-          <div className="col-9 resume-text">
+          <div className="offset-sm-2 offset-md-0 col-sm-10 col-md-10 resume-text">
             <div>{this.text}</div>
             <div className="feedback-icons">
               <FeedbackIcons />

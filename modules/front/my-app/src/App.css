@@ -7,3 +7,25 @@
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+.title > h1 {
+    margin-top: 40px;
+}
+
+.articles {
+    max-width: 80%;
+    margin-right: 0px;
+    float: right;
+}
+
+.shortcuts {
+    position: sticky;
+    top: 0;
+    width: 20%;
+    float: right;
+}
+
+.shortcuts > .shortcut-item {
+    width: 70%;
+    margin: auto;
+}

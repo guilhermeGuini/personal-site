@@ -13,7 +13,6 @@ class Thumbnail extends React.Component {
     return (
       <figure className="thumbnail">
         <img src={this.srcImg} alt="Img" />
-        <figcaption className="figure-caption">A caption for the.</figcaption>
       </figure>
     );
   }
