@@ -2,7 +2,18 @@ import React, { Component } from 'react';
 
 import './Header.css'
 
+import Image from './commons/Image';
+
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+    this.changeSourceImg = this.changeSourceImg.bind(this);
+  }
+
+  changeSourceImg(img, newSrc) {
+    console.log('ok');
+  }
 
   render() {
     return (
@@ -26,13 +37,17 @@ class Header extends Component {
               <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             <div className="icons-header">
-              <a href="#"><img alt="linkedin icon" width="36 px" src="/imgs/LI-In-Bug.png"></img></a>
-              <a href="#"><img alt="github icon" src="/imgs/GitHub-Mark-32px.png"></img></a>
+              <a href="https://www.linkedin.com/in/guilherme-silva-guini-86613bb2/" target="blank">
+                <Image alt="linkedin icon" src="/imgs/LI-In-Bug.png" srcOver="/imgs/LI-In-Bug-Inverse.png" />
+              </a>
+              <a href="https://github.com/guilhermeGuini" target="blank">
+                <Image alt="linkedin icon" src="/imgs/GitHub-Mark-32px.png" srcOver="/imgs/GitHub-Mark-Inverse-32px.png" />
+              </a>
             </div>
           </div>
 
         </nav>
-        <div className="row shadow-header"></div>
+        <div className="shadow-header"></div>
       </div>
     );
   }

@@ -3,29 +3,16 @@
     padding: 0px;
 }
 
-.article-preview {
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.title > h1 {
+.title {
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
-.articles {
-    max-width: 80%;
-    margin-right: 0px;
-    float: right;
+.hidden {
+    display: none;
 }
 
-.shortcuts {
-    position: sticky;
-    top: 0;
-    width: 20%;
-    float: right;
-}
-
-.shortcuts > .shortcut-item {
-    width: 70%;
-    margin: auto;
+label {
+    font-size: 15px;
+    color: gray;
 }

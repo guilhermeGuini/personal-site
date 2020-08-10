@@ -1,0 +1,16 @@
+{
+  "name": "fake-server",
+  "version": "1.0.0",
+  "description": "Node JS Fake Server, for building front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Guini",
+  "license": "ISC",
+  "dependencies": {
+    "casual": "^1.6.2",
+    "json-server": "^0.16.1",
+    "save-dev": "0.0.1-security"
+  }
+}

@@ -14,5 +14,7 @@
 
 .shadow-header {
     min-height: 2px;
+    width: 98%;
+    margin: 0 auto;
     box-shadow: 5px 10px 8px #888888;
 }

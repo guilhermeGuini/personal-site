@@ -1,0 +1,14 @@
+.footer {
+    padding-bottom: 10px;
+}
+
+.shadow-footer {
+    min-height: 2px;
+    width: 98%;
+    margin: 0 auto;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.footer-content {
+    margin-top: 50px;
+}
