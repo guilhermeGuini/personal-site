@@ -22,10 +22,14 @@ const ArticlePreview = (props) => {
             </div>
           </div>
           <div className="row">
-            {articlePreview.description}
+            <div className="col-md-12">
+              {articlePreview.description}
+            </div>
           </div>
-          <div className="feedback-icons">
-            <FeedbackIcons data={articlePreview.socialFeedback} />
+          <div className="row">
+            <div className="col-md-12 feedback-icons">
+              <FeedbackIcons data={articlePreview.socialFeedback} />
+            </div>
           </div>
         </div>
       </div>

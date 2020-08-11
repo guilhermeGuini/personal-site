@@ -11,33 +11,25 @@ export default function Main() {
 
     const pathArticles = "/articles";
 
+    const links = [{ filter: 'java', value: 'Java' },
+                   { filter: 'csharp', value: 'C#' },
+                   { filter: 'springboot', value: 'Spring Boot' },
+                   { filter: 'hibernate', value: 'Hibernate' },
+                   { filter: 'sql', value: 'SQL' },
+                   { filter: 'plsql', value: 'PL-SQL' },
+                   { filter: 'devops', value: 'Devops' }];
+
     return (
         <div className="container-fluid">
             <div className="shortcuts">
                 <div className="shortcut-item">
                     <span>Tecnologias</span>
                     <ul>
-                        <li>
-                            <Link to={{ pathname: pathArticles, search: "?q=java" }}>Java</Link>
-                        </li>
-                        <li>
-                            <Link to={{ pathname: pathArticles, search: "?q=csharp" }}>C#</Link>
-                        </li>
-                        <li>
-                            <Link to={{ pathname: pathArticles, search: "?q=springboot" }}>Spring Boot</Link>
-                        </li>
-                        <li>
-                            <Link to={{ pathname: pathArticles, search: "?q=hibernate" }}>Hibernate</Link>
-                        </li>
-                        <li>
-                            <Link to={{ pathname: pathArticles, search: "?q=sql" }}>SQL</Link>
-                        </li>
-                        <li>
-                            <Link to={{ pathname: pathArticles, search: "?q=plsql" }}>PL-SQL</Link>
-                        </li>
-                        <li>
-                            <Link to={{ pathname: pathArticles, search: "?q=devops" }}>Devops</Link>
-                        </li>
+                        {links.map(item => (
+                            <li key={item.filter}>
+                                <Link to={{pathname: pathArticles, search: "?q=" + item.filter}}>{item.value}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="shortcut-item">
@@ -54,6 +46,9 @@ export default function Main() {
                         <Redirect to={pathArticles} />
                     </Route>
                     <Route exact path={pathArticles}>
+                        <ArticlesPreview />
+                    </Route>
+                    <Route path={pathArticles + "/:filter"}>
                         <ArticlesPreview />
                     </Route>
                     <Route path="/article/:id" component={Article} />
