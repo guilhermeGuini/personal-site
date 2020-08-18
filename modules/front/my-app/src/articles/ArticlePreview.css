@@ -1,5 +1,10 @@
+
 .article-preview > hr {
     width: 80%;
+}
+
+.art-preview-title {
+    margin-left: 10px;
 }
 
 .resume-text {

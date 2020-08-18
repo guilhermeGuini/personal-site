@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=3d-float');
+
 .navbar {
     min-height: 80px;
+    background-color: whitesmoke;
 }
 
 .icons-header {
@@ -17,4 +20,10 @@
     width: 98%;
     margin: 0 auto;
     box-shadow: 5px 10px 8px #888888;
+}
+
+.personal-name {
+    font-family: 'Rancho';
+    font-size: 30px;
+    color: black;
 }

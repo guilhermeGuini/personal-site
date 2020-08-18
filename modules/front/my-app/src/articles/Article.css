@@ -1,0 +1,46 @@
+.content-article {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.art-title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.art-title-second {
+    color: gray;
+    font-size: 18px;
+}
+
+.art-tags {
+    margin-left: 30px;
+}
+
+.art-tags > span {
+    margin-right: 5px;
+    font-style: italic;
+}
+
+.art-section {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+.art-list-summary {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.art-list {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+p {
+    text-align: justify;
+    font-size: 22px;
+}

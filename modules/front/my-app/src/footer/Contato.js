@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import TextField from '../commons/forms/TextField';
 import TextArea from '../commons/forms/TextArea';
 
+import './Contato.css';
+
 class Contato extends Component {
 
     constructor(props) {

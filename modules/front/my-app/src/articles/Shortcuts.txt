@@ -1,0 +1,33 @@
+    const links = [{ filter: 'java', value: 'Java' },
+    { filter: 'csharp', value: 'C#' },
+    { filter: 'springboot', value: 'Spring Boot' },
+    { filter: 'hibernate', value: 'Hibernate' },
+    { filter: 'sql', value: 'SQL' },
+    { filter: 'plsql', value: 'PL-SQL' },
+    { filter: 'devops', value: 'Devops' }];
+
+.shortcuts {
+    position: sticky;
+    top: 0;
+    width: 20%;
+    float: right;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.shortcuts > .shortcut-item {
+    width: 100%;
+}
+
+/*<div className="shortcuts">
+                            <div className="shortcut-item">
+                                <span>Tecnologias</span>
+                                <ul>
+                                    {links.map(item => (
+                                        <li key={item.filter}>
+                                            <Link to={{ pathname: pathArticles, search: "?q=" + item.filter }}>{item.value}</Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                                    </div>*/

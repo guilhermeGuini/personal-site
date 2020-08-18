@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=3d|shadow-multiple');
+
+.not-found-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.not-found-content h1 {
+    font-family: 'Rancho';
+    color: black;
+}

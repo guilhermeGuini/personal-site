@@ -13,6 +13,13 @@ server.get('/articles', (request, response) => {
     }
 })
 
+server.get('/articles/:name', (request, response) => {
+    if (request.method === 'GET') {
+        const article = require('./article/index');
+        response.status(200).jsonp(article());
+    }
+})
+
 server.listen(port, () => {
     console.log('JSON Server is running')
 })
