@@ -20,8 +20,8 @@ module.exports = () => {
     articles: []
   };
   // Create 100 users
-  /*for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {
     data.articles.push(casual.article);
-  }*/
+  }
   return data;
 };

@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 import './Header.css'
 
-import Image from './commons/Image';
+import Image from '../commons/Image';
 
 export default function Header() {
 

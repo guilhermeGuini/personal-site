@@ -14,7 +14,6 @@ const ArticlePreviews = () => {
     const history = useHistory();
 
     const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
     const [articles, setArticles] = useState([]);
 
     const urlParams = new URLSearchParams(location.search);
@@ -23,10 +22,8 @@ const ArticlePreviews = () => {
         fetch("http://localhost:8000/articles" + (location.search ? location.search : ''))
             .then(res => res.json())
             .then((result) => {
-                setIsLoaded(true);
                 setArticles(result.articles);
             }, (error) => {
-                setIsLoaded(true);
                 setError(error);
             })
 
@@ -58,7 +55,7 @@ const ArticlePreviews = () => {
                             </div>
                             <div className="article-preview">
                                 {
-                                    articles.length == 0 ?
+                                    articles.length === 0 ?
                                         <GenericNotFound msg="Nenhum artigo foi encontrado!"/> :
                                         articles.map(article => (
                                             <div role="link" key={article.id} onClick={() => history.push(`/articles/${article.id}`)}>
